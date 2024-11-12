@@ -10,23 +10,28 @@
     <div class="flex-col">
         <h1>Anirudhh Ramesh</h1>
         <p>Friends call me Arnie. I'm 22. I'm a Master CS @ ETHZ, did undergrad CS at EPFL.</p>
-        <p>After a failed YC interview, I realized that 1. money doesn't matter, fulfillment does. 2. Life is too short to not do what I love. 3. I have not figured out what I love yet. My solution to 3 is to learn as much as I can about the world. This starts with maths, physics, machine learning and robotics. I am aware my beliefs change over time. Dated Jul 25th, 2024.</p>
+        <p>I'm a strong coder who can also do marketing (11K followers, 3M views on LinkedIn) and sales (closed CHF 1K+ and soon much more). <a href="https://nav.al/build-sell">According to Naval Ravikant, that makes me 'unstoppable'</a></p>
+        <p>I'm set on building a company. The effort to build a small successful company vs a unicorn-scale company is similar - so might as well go big.</p> 
+        <p>I'm focused on speed, solving a problem for people I deeply empathize with, and building with great friends.</p>
         
         <h3>My average day</h3>
         <p>Wake-up > Work > Lunch > Work > Dinner > Study|Code > Gym|Soccer|Bouldering > Sleep</p>
         
         <h3>Some places I worked</h3>
         <ul class="list-disc">
+            <li>ML Researcher @ ETHZ Scalable Parallel Computing Lab</li>
+            <p class="description">Implementing SOTA efficient 3D Gaussian Splatting using the DaCe framework from the SPCL Lab (advised by Prof. Torsten Hoefler).</p>
+          
             <li>Software Engineer Intern @ Amazon Web Services</li>
-            <p class="description">Learnt that networking *is* the internet. Worked in Network Monitoring. Lambda, S3, DynamoDB, SNS/SQS,. Shipped to prod.</p>
+            <p class="description">Worked in Network Monitoring. Lambda, S3, DynamoDB,... . Productized a data science PoC, shipped 3 services to prod handling 1M+ requests per day. Got return.</p>
             
             <li>Co-founder & CEO @ <a href="https://app.swirl.so">Swirl</a></li>
-            <p class="description">Developed a 3D Canva competitor based on GLSL shaders, ThreeJS, NextJS. Grew 120 waitlist sign-ups. Interviewed for YC. Stopped because no founder-product fit.</p>
+            <p class="description">Developed a 3D Canva competitor based on GLSL shaders, ThreeJS, NextJS. Grew 120 waitlist sign-ups. Interviewed for YC. Stopped because we started from tech (not customers).</p>
             
             <li>Software Engineer Intern @ Stacksync (YC W24)</li>
             <p class="description">Designed & implemented business integrations - ChargeBee (subscriptions), HubSpot (CRM) and Auth0 (auth).</p>
 
-            <li>Autonomous Navigation Engineer @ EPFL Xplore (Mars Rover)</li>
+            <li>Autonomous Navigation Engineer, Marketing Lead @ EPFL Xplore (Mars Rover)</li>
             <p class="description">Researched and created various designs for an autonomous navigation system built with real-time SLAM & path planning with ROS1 & move_base, using sensor data from IMUs, a Kinect stereo camera and Ouster OS1-16 Lidar.</p>
 
             <li>iOS App Developer @ Sleepiz </li>
@@ -35,9 +40,10 @@
     
         <h3>My past projects</h3>
         <ul class="list-disc">
-            <li><a href="http://github.com/anirudhhramesh/micrograd">MicroGrad.</a> <span class="description">Re-built PyTorch from first principles. Reviewed derivatives, backprop. Trained a hotdog classifier.</span></li>
+            <li><a href="https://github.com/AnirudhhRamesh/BlogEditor">Blog Editor.</a> <span class="description">Built a Python CLI which generates entire blogs (even thumbnails) from a guest CV + photo + recorded interview. Uses Claude-3 Opus, contrastive Chain-of-though, few-shot.</span></li>
+            <li><a href="http://github.com/anirudhhramesh/micrograd">ML Training & Inference Engine (from scratch)</a> <span class="description">Re-built PyTorch/Micrograd from first principles. Reviewed derivatives, backprop. Trained a hotdog classifier.</span></li>
             <li><a href="https://drive.google.com/file/d/1qopGHeoYPdk5HrGPIBWW9fGWO3MgZnmH/view">Efficient, distributed sparse matrix-matrix multiplication.</a> <span class="description">(5-Team project) Using MPI & C++, implemented a distributed sparse matrix-matrix multiplication algorithm. Did most design & implementation, using primitives like broadcast, Allgather(v), Alltoall(v), Allreduce. Came up with novel ideas like bloom filter for column-sharing protocol which led to 33% speedup.</span></li>
-            <li><a href="https://www.ambitiousxdriven.com">Ambitious x Driven.</a> <span class="description"> CS outlier/founder newsletter with 690 readers, ~300K views. Automated interview-to-blog generation with AssemblyAI, Claude-3 Opus, Python.</span></li>
+            <li><a href="https://www.ambitiousxdriven.com">Ambitious x Driven.</a> <span class="description"> CS outlier/founder newsletter with 1300 readers, ~400K views. Monetizing using job board + partners</span></li>
             <li><a href="http://gandalf-v2-cae5533834d4.herokuapp.com">LLM Prompt Injection game</a> <span class="description">Inspired by Gandalf, built in Python Flask. 550 users, 3.5K prompts generated.</span></li>
             <li><a href="https://github.com/AnirudhhRamesh/Intelligent-Traffic-Backend">Arduino Vehicle Traffic Simulation</a> <span class="description">(5-Team undergrad project) Built robust, short-turning radius 3D-printed cars which were used for a CV-based simple traffic simulation with a feedback control loop.</span></li>
         </ul>
@@ -45,6 +51,7 @@
         <h3>Backlog of projects I want to build</h3>
         <ul>
           <li>GPT2 from scratch. <span class="description">Following Andrej Karpathy's lectures. Implement additional latest research improvements on top such as Flash Attention, Llama 3.1 paper. Deploy on custom 'chatgpt' site, built to be highly-scalable (AWS S3, Lambda, SageMaker)</span></li>
+          <li>TTS model from scratch <span class="description">Build a TTS similar to ElevenLabs or Google. If it's good enough, use it for creating AI-generated blogs for my newsletter www.ambitiousxdriven.com</span></li>
           <li>Stable Diffusion from scratch. <span class="description">Implement fine-tunes, try generate some stylized images of move shots (e.g. Anime-ified Taxi Driver).</span></li>
           <li>3D game engine from scratch. <span class="description">In C/C++. Use CUDA for efficient matrix operations. Implement shaders, raytracing.</span></li>
           <li>Robot Hand. <span class="description">Remote-operable, trackable joints, pressure-feedback. V0 with servos + cords. Try imitation learning and reinforcement learning.</span></li>
@@ -55,12 +62,12 @@
 
         <h3>Some outlier things about me</h3>
         <ul class="list-disc">
-            <li>At 14, started coding. Built a Flappy Bird clone in Unity & C#. Then self-learnt Android & iOS development.</li>
+            <li>At 14, started coding. Built a Flappy Bird clone in Unity & C#. Then self-learnt Android & iOS development, shipped apps to my high school (500+ users).</li>
             <li>At 15, built a school clothing enterprise. Sold 1.3K clothes, generated €20K revenue</li>
             <li>At 16, joined a Sleepiz, a Swiss start-up, and built their entire iOS app in 2 months. Login/Auth, view/stream heartrate, breathing, movement data from their sleep-monitoring device. They raised 6.2M in 2022.</li>
-            <li>More things: Generated 1.5M views through LinkedIn. Led 2 start-up investments through s2s.vc. Founded & led the Google Developer Student Club in Lausanne.</li>
+            <li>More things: Generated 3M views through LinkedIn. Led 2 start-up investments through s2s.vc. Founded & led the Google Developer Student Club in Lausanne.</li>
         </ul>
-        <p class="description">This website was last updated on Fri Aug 16, 2024.</p>
+        <p class="description">This website was last updated on Tue Nov 12, 2024.</p>
     </div>
 
   </body>

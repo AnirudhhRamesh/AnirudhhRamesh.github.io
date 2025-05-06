@@ -8,7 +8,7 @@
   </head>
   <body class="container">
     <div class="flex-col">
-      <h1>Anirudhh Ramesh</h1>
+      <h1>Anirudhh (Arnie) Ramesh</h1>
       <p class="description">
         <a href="https://www.linkedin.com/in/anirudhhramesh/">LinkedIn</a> -
         <a href="https://github.com/anirudhhramesh">Github</a> - Contact:
@@ -16,23 +16,19 @@
       </p>
 
       <p>
-        Friends call me Arnie. I'm 22, born in Brussels, to South Indian
-        parents.
-      </p>
-      <p>
         I'm a MSc (grad) CS student @ ETHZ and did my BSc (undergrad) CS at
-        EPFL.
+        EPFL. Originally, I was born in Brussels to South Indian parents.
       </p>
       <p>
         I'm a strong coder who can also do marketing (12.5K followers, 3M views
-        on LinkedIn) and sales (closed CHF 1K+ and soon much more).
+        on LinkedIn) and sales (closed CHF ~20K for my blog & hackathons).
         <a href="https://nav.al/build-sell"
           >According to Naval Ravikant, that makes me 'unstoppable'</a
         >
       </p>
       <p>
-        I'm set on building a company as I love building things & I love users
-        using it. The effort to build a small successful company vs a
+        I'm set on building a research company as I love building things & I
+        love users using it. The effort to build a small successful company vs a
         unicorn-scale company is similar - so might as well go big.
       </p>
       --
@@ -42,12 +38,17 @@
         <a href="https://x.com/arnie_hacker/status/1887101974719402297"
           >AI Tinkerers Zurich</a
         >
-        which had 300+ applicants (Google, Nvidia, YC, OpenAI, ...).
+        or the
+        <a
+          href="https://www.linkedin.com/posts/anirudhhramesh_switzerland-has-the-highest-density-of-robotics-activity-7318547325646217217-gYO2"
+          >OpenAI x Mimic x Loki Robotics Hackathon</a
+        >
+        which had 300+ applicants (Google, Nvidia, YC, NASA, ...).
       </p>
 
       <p>
         I'll be launching many more events/hackathons and getting the Zurich
-        ecosystem alive, connected & ambitious.
+        ecosystem kickstarted.
       </p>
 
       <h3>My average day</h3>
@@ -132,20 +133,17 @@
 
       <h3>Some places I worked at</h3>
       <ul class="list-disc">
-        <li>
-          Incoming: Software Engineer Intern @ Apple Cork (Localisation team)
-        </li>
+        <li>Software Engineer Intern @ Apple Cork (Localisation team)</li>
         <p class="description">
-          Note: Full-time jobs help me timebox & focus better during nights &
-          weekends. I'll try grind out 30 ETHZ credits on the side. Going to
-          Ireland is the equivalent of me going full monk mode to lock-in.
+          Working with XCode, SwiftUI, evals, fine-tuned LLMs, speculative
+          decoding for software localization/translation purposes.
         </p>
         <li>ML Researcher @ ETHZ Scalable Parallel Computing Lab</li>
         <p class="description">
-          Implementing SOTA efficient 3D Gaussian Splatting using the DaCe
-          framework from the SPCL Lab (advised by Prof. Torsten Hoefler). Also
-          working on large-scale distributed 3DGS, efficient gaussians streaming
-          & client rendering.
+          Implementing 3D Gaussian Splatting using the DaCe framework from the
+          SPCL Lab (advised by Prof. Torsten Hoefler). Also working on
+          large-scale distributed 3DGS, efficient gaussians streaming & client
+          rendering.
         </p>
 
         <li>Software Engineer Intern @ Amazon Web Services</li>
@@ -230,72 +228,73 @@
         </li>
       </ul>
 
-      <h3>Backlog of projects I want to build</h3>
+      <h3>Projects backlog</h3>
       <ul>
+        <li>
+          GaussianDB: World-scale Gaussian Splatting
+          <span class="description"
+            >Implement an efficient 3DGS renderer in C++/Rust (using CUDA).
+            Implement
+            <a
+              href="https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/"
+              >hierarchical 3DGS</a
+            >/<a href="https://city-super.github.io/octree-gs/"
+              >Octree data structure</a
+            >
+            to support continuous LoD for efficient rendering. Implement a DB
+            structure to support multi-client, efficient streaming of
+            world-scale gaussians. Deploy via a Kubernetes cluster.
+          </span>
+        </li>
+        <li>
+          BitSeek: Bit-quantized reasoning model
+          <span class="description"
+            >Implement
+            <a href="https://arxiv.org/abs/2504.12285">BitLayer</a> paper with
+            4*2b packing into int8 ops. Use it to build a reasoning model.
+            Pre-train, then apply SFT, DPO and GRPO training. Re-write a
+            CPU-optimized inference engine for the model using SIMD (AVX-512,
+            ...), SSA, blocking, cache-aware, etc.</span
+          >
+        </li>
+        <li>
+          GaussianAvatar Podcaster:
+          <span class="description"
+            >Implement
+            <a href="https://microsoft.github.io/DenseLandmarks/"
+              >3D Face Reconstruction with Dense Landmarks</a
+            >
+            or
+            <a href="https://github.com/ShenhanQian/GaussianAvatars"
+              >GaussianAvatar</a
+            >
+            paper. Likely offline-generated using SIMPLify-X
+            (iterative-optimization fitting), perhaps mixing in FLAME +
+            surface-attached Gaussians, dense landmarks (to fit speaker
+            face/shoulders). Use this to generate high-quality podcasts from my
+            Zoom guests recordings of www.ambitiousxdriven.com, a bit like
+            <a href="https://www.youtube.com/watch?v=MVYrJJNdrEg"
+              >Lex Fridman's Meta-Codec interview.</a
+            ></span
+          >
+        </li>
         <li>
           TTS model from scratch
           <span class="description"
-            >Build a TTS similar to ElevenLabs or Google. If it's good enough,
-            use it for creating AI-generated blogs for my newsletter
-            www.ambitiousxdriven.com</span
-          >
-        </li>
-        <li>
-          Stable Diffusion from scratch.
-          <span class="description"
-            >Implement fine-tunes, try generate some stylized images of move
-            shots (e.g. Anime-ified Taxi Driver).</span
-          >
-        </li>
-        <li>
-          3D game engine from scratch.
-          <span class="description"
-            >In C/C++. Use CUDA for efficient matrix operations. Implement
-            shaders, raytracing.</span
-          >
-        </li>
-        <li>
-          Robot Hand.
-          <span class="description"
-            >Remote-operable, trackable joints, pressure-feedback. V0 with
-            servos + cords. Try imitation learning and reinforcement
-            learning.</span
-          >
-        </li>
-        <li>
-          Autonomous Vehicle simulation.
-          <span class="description"
-            >Build a simple end-to-end computer-vision model for autonomous
-            vehicle. Build a simulation with multiple of these vehicle
-            agents.</span
-          >
-        </li>
-        <li>
-          Large-scale, distributed network simulation.
-          <span class="description"
-            >Using C++ (or Scala), model network devices (states: operating,
-            maintenance, failure) and links between them. Test out distributed
-            packet-forwarding algorithms, anomaly detection,
-            auto-remediation.</span
-          >
-        </li>
-        <li>
-          Also:
-          <span class="description"
-            >DB from scratch, OS from scratch, Computer from scratch (on FPGA),
-            Robodog(?)</span
+            >Build a TTS similar to Sesame, Orpheus, etc. If it's good enough,
+            use it for creating AI-generated podcasts for my newsletter
+            www.ambitiousxdriven.com. Need to dive deeper into this.</span
           >
         </li>
       </ul>
       <p class="description">Many more things too :)</p>
 
-      <h3>Books I'd like to read</h3>
-      >
+      <h3>Reading backlog</h3>
       <ul class="list-disc">
         <li>
           <a href="https://link.springer.com/book/10.1007/978-3-031-01761-2"
-            >The Datacenter as a computer</a
-          >
+            >The Datacenter as a computer
+          </a>
         </li>
       </ul>
 

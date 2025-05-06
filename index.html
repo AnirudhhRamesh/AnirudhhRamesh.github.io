@@ -251,8 +251,8 @@
           <span class="description"
             >Implement
             <a href="https://arxiv.org/abs/2504.12285">BitLayer</a> paper with
-            4*2b packing into int8 ops. Use it to build a reasoning model.
-            Pre-train, then apply SFT, DPO and GRPO training. Re-write a
+            4*2b packing into int8 ops. Pre-train on GH200 cluster, then apply
+            SFT, DPO and GRPO training to build a reasoning model. Re-write a
             CPU-optimized inference engine for the model using SIMD (AVX-512,
             ...), SSA, blocking, cache-aware, etc.</span
           >

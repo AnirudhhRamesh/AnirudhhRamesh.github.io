@@ -3,7 +3,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
     color: #37352f;
     background-color: #ffffff;
-    line-height: 1.5;
+    line-height: 1.45;
     margin: 0;
     padding: 0;
 }
@@ -11,33 +11,50 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.5em;
-    margin-bottom: 0.2em; /* Reduced from 0.3em */
+    margin-top: 1.15em;
+    margin-bottom: 0.15em;
     font-weight: 600;
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 2.05rem;
 }
 
 p {
-    margin-top: 0.1em; /* Reduced from 0.2em */
-    margin-bottom: 1em;
+    margin-top: 0.15em;
+    margin-bottom: 0.75em;
 }
 
 /* Lists */
 ul, ol {
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
 }
 
 .list-disc {
-    list-style-type: '>  ';
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
+}
+
+.list-disc {
+    list-style: none;
+}
+
+.list-disc > li {
+    position: relative;
+    padding-left: 0.75rem;
+    margin: 0.25rem 0;
+}
+
+.list-disc > li::before {
+    content: "›";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #808080;
 }
 
 /* Links */
@@ -48,6 +65,15 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.95em;
+    background: #f6f5f4;
+    border: 1px solid #eceae8;
+    padding: 0.1em 0.35em;
+    border-radius: 6px;
 }
 
 /* Spacing */
@@ -61,6 +87,7 @@ a:hover {
 }
 
 .flex-col {
+    display: flex;
     flex-direction: column;
 }
 
@@ -84,4 +111,123 @@ a:hover {
 /* Description style */
 .description {
     color: #808080; /* Gray color */
+}
+
+/* Page-specific bits */
+.page-header h1 {
+    margin-top: 0;
+}
+
+.mini-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 0.9em;
+    margin-bottom: 0.15em;
+}
+
+.meta {
+    margin-top: 0.15rem;
+    margin-bottom: 0.55rem;
+    color: #5b5954;
+}
+
+.links {
+    margin-top: 0.25rem;
+}
+
+.sep {
+    margin: 0 0.35rem;
+    color: #b3b3b3;
+}
+
+.section-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 0.22rem 0.45rem;
+    border-radius: 999px;
+    border: 1px solid #e6e3df;
+    background: #faf9f8;
+    color: #5b5954;
+    white-space: nowrap;
+}
+
+.badge-highlight {
+    border-color: #d7e3ff;
+    background: #eef4ff;
+    color: #1b4fd6;
+}
+
+.callout {
+    margin: 0.6rem 0 0.85rem;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #eceae8;
+    border-left: 4px solid #d0cdc7;
+    border-radius: 9px;
+    background: #ffffff;
+}
+
+.callout.highlight {
+    border-left-color: #1a73e8;
+    background: #f6f9ff;
+}
+
+.callout p:last-child {
+    margin-bottom: 0;
+}
+
+.hardest-note {
+    margin: 0.45rem 0 0.8rem;
+    color: #5b5954;
+}
+
+.project-card {
+    margin: 0.55rem 0 0.85rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid #e3ebff;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #f8fbff 0%, #f3f8ff 100%);
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.08);
+}
+
+.project-card p:last-child {
+    margin-bottom: 0;
+}
+
+.item-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.item-links {
+    color: #808080;
+}
+
+details {
+    margin: 0.25rem 0 1rem;
+}
+
+summary {
+    cursor: pointer;
+    user-select: none;
+}
+
+.details-label {
+    margin: 0.85rem 0 0.25rem;
+    color: #5b5954;
+}
+
+.footer {
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f0eeeb;
 }

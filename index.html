@@ -3,219 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arnie's portfolio</title>
+    <title>Arnie Ramesh</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body class="container">
-    <main class="flex-col">
+  <body>
+    <div class="container">
+
       <header class="page-header">
-        <h1>Arnie</h1>
-        <p class="meta">
-          23 years old. MSc CS @ ETH Zürich (expected Aug 2026). Born in Brussels.
-        </p>
-        <p class="description links">
-          <a href="https://x.com/arnie_hacker">X</a>
-          <span class="sep">·</span>
-          <a href="mailto:anirudhh.ramesh@gmail.com">Email</a>
-          <span class="sep">·</span>
-          <a href="https://github.com/anirudhhramesh">GitHub</a>
-          <span class="sep">·</span>
+        <h1>Arnie Ramesh</h1>
+        <p class="meta">23. MSc CS @ ETH Zürich (Aug 2026). Born in Brussels.</p>
+        <p class="links">
+          <a href="https://x.com/arnie_hacker">X</a><span class="sep">·</span>
+          <a href="mailto:anirudhh.ramesh@gmail.com">Email</a><span class="sep">·</span>
+          <a href="https://github.com/anirudhhramesh">GitHub</a><span class="sep">·</span>
           <a href="https://linkedin.com/in/anirudhhramesh">LinkedIn</a>
         </p>
       </header>
 
+      <section aria-labelledby="writing">
+        <h2 id="writing">Writing</h2>
+        <ul class="writing-list">
+          <li>
+            <a href="blog/how-i-think-about-world-models.html">coming soon.</a>
+            <span class="writing-date">Apr 2026</span>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="section-divider" />
+      <h2 class="about-label">About me</h2>
+
       <section aria-labelledby="hardest-thing">
-        <h3 id="hardest-thing" class="mini-title">Hardest thing I’ve done</h3>
+        <h2 id="hardest-thing" class="h2-white">Hardest thing I've done</h2>
         <p class="hardest-note">
-          I worked full-time at Apple, completed 28 credits at ETH
-          Zürich (~a full semester), went to gym 4× a week and organized the
-          Zurich OpenAI Robotics Hack (where I fundraised ~$30K in commitments in
-          1 week). This required working 12-14 hours every single day for 3
-          months.
+          I worked full-time at Apple, completed 28 credits at ETH Zürich (~a full semester),
+          went to gym 4× a week and organized the Zurich OpenAI Robotics Hack (where I fundraised
+          ~$30K in commitments in 1 week). This required working 12–14 hours every single day for 3 months.
         </p>
       </section>
 
       <section aria-label="Current project">
-        <div class="project-card">
-          <p><span class="badge badge-highlight">Current project</span></p>
-          <p>
-            <strong>CS:GO world models.</strong> I worked on robotics in Oct 2025;
-            it confused me why VLAs use a VLM backbone. Thus, I started working on
-            world models after my exams. Iterating on robots is very slow
-            (requires real-world deployment), so I use CS:GO as my environment.
-            I’m scraping game state (<code>.dem</code>) from FaceIt Pro matches,
-            rendering gameplay, and training action-conditioned video diffusion /
-            inverse dynamics / V-JEPA-style models.
-          </p>
-          <p class="description">
-            Updates on my <a href="https://x.com/arnie_hacker">X</a>.
-          </p>
-        </div>
+        <h2>Current Project</h2>
+        <ul class="list-disc">
+          <li>
+            <div class="item-head">
+              <strong>CS:GO world models</strong>
+            </div>
+            <p class="description">
+              I worked on robotics in Oct 2025; it confused me why VLAs use a VLM backbone.
+              Thus, I started working on world models after my exams. Iterating on robots is very slow
+              (requires real-world deployment), so I use CS:GO as my environment.
+              I'm scraping game state (<code>.dem</code>) from FaceIt Pro matches,
+              rendering gameplay, and training action-conditioned video diffusion /
+              inverse dynamics / V-JEPA-style models.
+              Updates on my <a href="https://x.com/arnie_hacker">X</a>.
+            </p>
+          </li>
+        </ul>
       </section>
 
       <section aria-labelledby="past-tech-projects">
-        <h2 id="past-tech-projects">Past technical projects</h2>
+        <h2 id="past-tech-projects">Technical projects</h2>
         <ul class="list-disc">
           <li>
             <div class="item-head">
               <strong>Humanoid in a week</strong>
-              <span class="item-links"
-                >·
-                <a
-                  href="https://x.com/arnie_hacker/status/1997788619432435790?s=20"
-                  >Demo</a
-                ></span
-              >
+              <span class="item-links">· <a href="https://x.com/arnie_hacker/status/1997788619432435790?s=20">Demo</a></span>
             </div>
             <p class="description">
-              With my friend <a href="https://x.com/pham_blnh">Binh</a>, we were
-              the first team in the world to deploy TWIST2 full-body teleop,
-              fine-tuned GR00T N1.5 on full-body data and ran low-latency
-              inference to Unitree G1 (which we got through a LinkedIn post).
-              Learnt how far behind open-source is, how bad teleop is, how poorly
-              VLAs generalize, how bad deployment testing is.
+              With <a href="https://x.com/pham_blnh">Binh</a>, we were the first team in the world to deploy TWIST2
+              full-body teleop, fine-tuned GR00T N1.5 on full-body data and ran low-latency inference to Unitree G1
+              (which we got through a LinkedIn post). Learnt how far behind open-source is, how bad teleop is,
+              how poorly VLAs generalize, how bad deployment testing is.
             </p>
           </li>
           <li>
             <div class="item-head">
               <strong>GPT‑2 from scratch</strong>
-              <span class="item-links"
-                >·
-                <a href="https://github.com/AnirudhhRamesh/GPT2">Code</a></span
-              >
+              <span class="item-links">· <a href="https://github.com/AnirudhhRamesh/GPT2">Code</a></span>
             </div>
             <p class="description">
-              Coded up &amp; trained on a 8xA100 cluster following Karpathy’s
-              tutorial during exam revisions. Much more interesting than exam
-              prep :)
+              Coded up &amp; trained on a 8×A100 cluster following Karpathy's tutorial during exam revisions.
+              Much more interesting than exam prep.
             </p>
           </li>
         </ul>
       </section>
 
       <section aria-labelledby="experience">
-        <h2 id="experience">Past experiences</h2>
+        <h2 id="experience">Experience</h2>
         <ul class="list-disc">
           <li>
             <div class="item-head">
-              <strong>Apple — Software Engineer Intern (Cork, Ireland)</strong>
-              <span class="badge">Mar 2025 – May 2025</span>
+              <strong>Apple — Software Engineer Intern</strong>
+              <span class="badge">Mar–May 2025 · Cork</span>
             </div>
             <p class="description">
-              Built an HTML editor for product managers to localize software
-              update information. Integrated LLMs to automate the localization
-              workflow. During n&amp;w, I completed 28 credits at ETH Zürich,
-              organized the Zurich Robotics Hack with OpenAI and went to gym
-              4×/week.
+              Built an HTML editor for PMs to localize software update information.
+              Integrated LLMs to automate the localization workflow. During n&amp;w, completed 28 ETH credits,
+              organized the Zurich Robotics Hack with OpenAI, went to gym 4×/week.
             </p>
           </li>
           <li>
             <div class="item-head">
-              <strong>Amazon Web Services — Software Engineer Intern (Dublin)</strong>
-              <span class="badge">Jun 2024 – Sep 2024</span>
+              <strong>Amazon Web Services — Software Engineer Intern</strong>
+              <span class="badge">Jun–Sep 2024 · Dublin</span>
             </div>
             <p class="description">
-              Shipped a metric ranking the network risk of every AWS network
-              device. Deployed 3 services each ingesting 1M requests/day; designed
-              to be highly scalable using DynamoDB, Lambda, SQS/SNS, batching,
-              etc.
+              Shipped a metric ranking the network risk of every AWS network device. Deployed 3 services
+              each ingesting 1M requests/day; designed for high scalability using DynamoDB, Lambda, SQS/SNS, batching.
             </p>
           </li>
           <li>
             <div class="item-head">
               <strong>Sleepiz — iOS App Developer</strong>
-              <span class="badge">Jul 2018 – Aug 2018</span>
+              <span class="badge">Jul–Aug 2018</span>
             </div>
             <p class="description">
-              At 16, built their iOS app in 2 months. Login/auth, streaming
-              biometrics; helped them raise 100K+ CHF in grants.
+              At 16, built their iOS app in 2 months. Login/auth, streaming biometrics;
+              helped them raise 100K+ CHF in grants.
             </p>
           </li>
         </ul>
       </section>
 
       <section aria-labelledby="research">
-        <h2 id="research">Some research work</h2>
+        <h2 id="research">Research</h2>
         <ul class="list-disc">
           <li>
             <div class="item-head">
-              <strong>Efficient, distributed sparse matrix–matrix multiplication</strong>
-              <span class="item-links"
-                >·
-                <a
-                  href="https://drive.google.com/file/d/18r9fvgn6buLlMpx_4TQoCzbt7mnejZAM/view?usp=sharing"
-                  >Report</a
-                ></span
-              >
+              <strong>Distributed sparse matrix–matrix multiplication</strong>
+              <span class="item-links">· <a href="https://drive.google.com/file/d/18r9fvgn6buLlMpx_4TQoCzbt7mnejZAM/view?usp=sharing">Report</a></span>
             </div>
             <p class="description">
-              Implemented a distributed SpGEMM algorithm in C++ &amp; MPI; used
-              primitives like Allgather(v), Alltoall(v), etc. Came up with a
-              bloom-filter protocol to minimize column-sharing communication,
-              leading to 33% speed-up (and beating Eigen in some cases).
+              Implemented a distributed SpGEMM algorithm in C++ &amp; MPI using Allgather(v), Alltoall(v).
+              Devised a bloom-filter protocol to minimize column-sharing communication — 33% speed-up, beating Eigen in some cases.
             </p>
           </li>
           <li>
             <div class="item-head">
               <strong>Optimized Clifford neural networks</strong>
-              <span class="item-links"
-                >·
-                <a
-                  href="https://drive.google.com/file/d/1J4NGSNIXc41gRamDAzZ3AuWwXAkbpTbD/view?usp=sharing"
-                  >Report</a
-                ></span
-              >
+              <span class="item-links">· <a href="https://drive.google.com/file/d/1J4NGSNIXc41gRamDAzZ3AuWwXAkbpTbD/view?usp=sharing">Report</a></span>
             </div>
             <p class="description">
-              Used kernel-caching, AVX2 SIMD vectorization, fused multiply-adds
-              and multi-accumulator designs for ~5.5× speed-up over baseline for
-              the linear layer; also implemented a kernel-free approach to reduce
-              memory requirements further.
+              Kernel-caching, AVX2 SIMD vectorization, fused multiply-adds, multi-accumulator designs —
+              ~5.5× speed-up over baseline for the linear layer; also a kernel-free approach to reduce memory requirements.
             </p>
           </li>
         </ul>
       </section>
 
       <section aria-labelledby="ecosystem-projects">
-        <h2 id="ecosystem-projects">Past ecosystem projects</h2>
+        <h2 id="ecosystem-projects">Ecosystem</h2>
         <ul class="list-disc">
           <li>
             <div class="item-head">
               <strong>Zurich builds</strong>
-              <span class="item-links"
-                >·
-                <a
-                  href="https://x.com/arnie_hacker/status/1926354034648072581?s=20"
-                  >OpenAI Robotics Hack</a
-                ></span
-              >
+              <span class="item-links">· <a href="https://x.com/arnie_hacker/status/1926354034648072581?s=20">OpenAI Robotics Hack</a></span>
             </div>
             <p class="description">
-              I wanted to surround myself with extremely talented, ambitious
-              people (the current events in Switzerland sucked). So I organized
-              Europe’s most talent-dense robotics hack, bringing together
-              researchers (Lucas Beyer, Marc Pollefeys, Marco Hutter), frontier
-              companies (OpenAI, Mimic Robotics, Loki Robotics, Prime Intellect)
-              and exceptional builders (ex-NASA, ex-NVIDIA, ex-DeepMind, ...).
-              Followed up with a simulation hackathon with Nvidia, Flexion
-              Robotics and Jua.ai.
+              Organized Europe's most talent-dense robotics hack — researchers (Lucas Beyer, Marc Pollefeys, Marco Hutter),
+              frontier companies (OpenAI, Mimic, Loki, Prime Intellect) and exceptional builders (ex-NASA, ex-NVIDIA, ex-DeepMind).
+              Followed up with a simulation hackathon with Nvidia, Flexion Robotics and Jua.ai.
             </p>
           </li>
           <li>
             <div class="item-head">
-              <strong>Ambitious x Driven</strong>
-              <span class="item-links"
-                >· <a href="https://www.ambitiousxdriven.com">Site</a></span
-              >
+              <strong>Ambitious × Driven</strong>
+              <span class="item-links">· <a href="https://www.ambitiousxdriven.com">Site</a></span>
             </div>
             <p class="description">
-              The biggest challenge in Europe is ambition. So I launched a
-              podcast interviewing exceptional students from ETH Zürich &amp;
-              EPFL to share their experiences and normalize ambition to ~1.8K
-              subscribers. Closed a $2.5K partnership from Founderful Campus. I
-              <a href="https://github.com/AnirudhhRamesh/BlogEditor"
-                >automated blog-writing using LLMs</a
-              >, then stopped posting to focus fully on building.
+              Podcast interviewing exceptional ETH Zürich &amp; EPFL students to normalize ambition — ~1.8K subscribers.
+              Closed a $2.5K partnership from Founderful Campus.
+              <a href="https://github.com/AnirudhhRamesh/BlogEditor">Automated blog-writing with LLMs</a>,
+              then stopped posting to focus on building.
             </p>
           </li>
           <li>
@@ -223,26 +184,21 @@
               <strong>AI Tinkerers Zurich</strong>
             </div>
             <p class="description">
-              Organized the first editions of AI Tinkerers in Zurich (~400
-              participants from DeepMind, Nvidia, Extropic, NASA, Isomorphic
-              Labs, ...). Stopped due to bureaucracy and because the vibe drifted
-              too much toward “networking” vs optimistic builders.
+              Organized the first editions of AI Tinkerers in Zurich (~400 participants from DeepMind, Nvidia, Extropic, NASA,
+              Isomorphic Labs). Stopped when the vibe drifted toward networking vs. building.
             </p>
           </li>
         </ul>
       </section>
 
       <section aria-labelledby="achievements">
-        <h2 id="achievements">Achievements</h2>
+        <h2 id="achievements">Recognitions</h2>
         <ul class="list-disc">
           <li>
             <div class="item-head">
               <strong>Hummingbird Magnificent Grantee</strong>
               <span class="badge">2025</span>
-              <span class="item-links"
-                >·
-                <a href="https://www.magnificentgrants.com">Magnificent Grants</a></span
-              >
+              <span class="item-links">· <a href="https://www.magnificentgrants.com">Magnificent Grants</a></span>
             </div>
             <p class="description">1 of 10 grantees selected in 2025.</p>
           </li>
@@ -252,72 +208,46 @@
               <span class="item-links">· <a href="https://fr8.so">FR8</a></span>
             </div>
             <p class="description">
-              1 of 30 exceptional technical builders selected to spend summer in a
-              Finnish hacker hotel. Worked on real-time human diffusion models.
+              1 of 30 exceptional technical builders selected to spend summer in a Finnish hacker hotel.
+              Worked on real-time human diffusion models.
             </p>
           </li>
         </ul>
       </section>
 
       <section aria-labelledby="other-stuff">
-        <h2 id="other-stuff">Other stuff</h2>
+        <h2 id="other-stuff">Other</h2>
         <details>
-          <summary class="description">more about me</summary>
-          <ul class="list-disc">
-            <li class="description">
-              Started coding at 12; at 14 built a Flappy Bird parody in Unity; at
-              15 built Android &amp; iOS apps used by half my high school (~500
-              students).
-            </li>
-            <li class="description">
-              At 15 launched a clothing enterprise at my school: sold ~1.3K
-              clothes and made €20K revenue.
-            </li>
-            <li class="description">
-              Organized the annual school festival as the youngest general
-              manager (~5,000 attendees); youngest vice-president and president
-              of my school student council.
-            </li>
-            <li class="description">
-              Grew a following of ~20K on LinkedIn; quit in Feb 2026 after
-              realizing most people actually building the future are on X.
-            </li>
+          <summary>more about me</summary>
+          <ul class="list-disc" style="margin-top:0.5rem">
+            <li class="description">Started coding at 12; at 14 built a Flappy Bird parody in Unity; at 15 built Android &amp; iOS apps used by half my high school (~500 students).</li>
+            <li class="description">At 15 launched a clothing enterprise at my school: sold ~1.3K clothes and made €20K revenue.</li>
+            <li class="description">Organized the annual school festival as the youngest general manager (~5,000 attendees); youngest VP and president of my school student council.</li>
+            <li class="description">Grew a following of ~20K on LinkedIn; quit in Feb 2026 after realizing most people actually building the future are on X.</li>
           </ul>
-          <p class="details-label">
-            <strong>Project backlog</strong>
-            <span class="description">— projects I’d like to build eventually.</span>
-          </p>
+          <p class="details-label"><strong>Project backlog</strong> — projects I'd like to build eventually.</p>
           <ul class="list-disc">
             <li>
-              <div class="item-head">
-                <strong>Real-time digital avatars</strong>
-              </div>
+              <div class="item-head"><strong>Real-time digital avatars</strong></div>
               <p class="description">
-                Collect 3D data using two iPhones with genlock; fit a Gaussian
-                Avatar (SMPL-X + Gaussians on vertices); train a diffusion
-                transformer conditioned on audio for face + body motion. I found
-                digital avatars a bit dystopian, so I didn’t proceed (but the tech
-                is very cool).
+                Collect 3D data using two iPhones with genlock; fit a Gaussian Avatar (SMPL-X + Gaussians on vertices);
+                train a diffusion transformer conditioned on audio for face + body motion.
+                Found digital avatars a bit dystopian, so I didn't proceed — but the tech is very cool.
               </p>
             </li>
             <li>
-              <div class="item-head">
-                <strong>Large-scale 3D Gaussian Splatting</strong>
-              </div>
+              <div class="item-head"><strong>Large-scale 3D Gaussian Splatting</strong></div>
               <p class="description">
-                Early idea: scale hierarchical 3DGS with a retrieval-optimized
-                “3DGS database” enabling out-of-core streaming (world-scale 3DGS,
-                multi-client serving). DJI &amp; other researchers beat me to it,
-                so it became less interesting to invest time on.
+                Scale hierarchical 3DGS with a retrieval-optimized "3DGS database" enabling out-of-core streaming
+                (world-scale 3DGS, multi-client serving). DJI &amp; others beat me to it.
               </p>
             </li>
           </ul>
         </details>
       </section>
 
-      <footer class="footer description">
-        Last updated Feb 2026.
-      </footer>
-    </main>
+      <footer class="footer">Last updated Apr 2026.</footer>
+
+    </div>
   </body>
 </html>
